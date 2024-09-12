@@ -1,0 +1,28 @@
+1. Írjon függvényt, amelynek két integer paramétere van, a visszatérési értéke pedig a
+két szám közötti legkisebb közös többszöröse.
+
+2. Írjon függvényt, amelynek egy 5x5-ös kétdimenziós tömb a paramétere és visszaadja
+a soronkénti maximum és minimum különbségét egy 5 méretű tömbben.
+
+3. Írjon függvényt, amelynek 3 integer paramétere van (a, b, c). A legkisebb és
+legnagyobb értéket írja felül 0-ra, majd cserélje meg az a és c, majd a b és a változók
+értékét. A függvény visszatérési értéke void. (a&lt;-&gt;c, b&lt;-&gt;a)
+
+4. Kérjen be a felhasználótól egy egész számot (a), 5 db szóköz nélküli stringet. Írja ki a
+képernyőre azokat, amelyek hossza az kisebb, mint az összes szóban található „a”
+betűk számossága. darab(a)
+
+5. Hozzon létre egy osztályt vagy struktúrát Banan néven, amelynek van súlya,
+minősége(„A vagy B”), egy bool adattagja, amely jelzi, hogy bio-e. (10, „A”,1) Töltsön
+fel egy 5 méretű tömböt banánokkal. Rendezze a tömböt súly szerint.
+
+6. Olvassa be a sorok.txt állományt egy tetszőleges adatszerkezetbe. Írja ki a
+gyakori.txt-be a legritkábban előforduló betűt és számosságát, valamint a nagy betűk
+számát.
+
+sorok.txt:
+Az alma piros
+A fű zöld
+Az ég kék
+A banán sárga
+Az alma zöld

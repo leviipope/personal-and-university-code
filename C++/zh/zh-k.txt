@@ -1,0 +1,462 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ZH GYAK ANYAG
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+#include <vector>
+#include <fstream>
+#include <map>
+using namespace std;
+
+//1. feladat
+//Írjon függvényt, amely paramétere egy integer, és megszámolja, hogy az adott számot hány nála kisebb számmal tudjuk osztani úgy, hogy 0 maradék képződjön
+//(megszámlálás)
+int oszthato(int n){
+	int szaml = 0;
+	for(int i = 1; i<n ; i++){
+		if((n % i) == 0){
+			szaml++;
+		}
+	}
+	return szaml;
+}
+
+//2.feladat
+//Írjon függvényt, amelynek egy 10 méretű integer tömb a paramétere, és visszaadja a maximum indexét.
+int maxindex(int tomb[10]){
+	int max = tomb[0];
+	int ind = 0;
+	for(int i = 0; i<10; i++){
+		if(tomb[i] > max){
+			max = tomb[i];
+			ind = i;
+		}
+	}
+	return ind;
+}
+
+//2. feladat 
+//Írjon függvényt, amelynek egy 10 méretű integer tömb a paramétere, és visszaadja a leggyakoribb elemet.
+int gyakori(int tomb[10]){
+	int maxcount = 0;
+	int lgyakoribb;
+	for(int i = 0; i<10; i++){
+		int count = 0;
+		for(int j = 0; j < 10; j++){
+			if(tomb[i] == tomb[j]){
+				count++;
+			}
+		}
+		if(count > maxcount){
+			maxcount = count;
+			lgyakoribb = tomb[i];
+		}
+	}
+	return lgyakoribb;
+}
+
+
+struct labda{
+	string szin;
+	int meret;
+};
+
+int main(){
+	cout << oszthato(20) << endl;
+	//2.feladat
+	int tomb[10] = {0,1,2,3,4,5,6,7,8,9};
+	cout << maxindex(tomb) << endl;
+	
+	//2.feladat
+	int tomb2[10] = {1,1,1,2,2,2,3,4,2,2};
+	cout << gyakori(tomb2) << endl;
+	
+	//4. feladat
+	//Hozzon létre egy osztályt vagy struktúrát labda néven, amelynek mérete és színe van. Kérjen be a felhasználótól 5 labdát, majd tárolja tetszőleges adatszerkezetben. //1 pont
+	//Hozzon létre 2 tömböt (más adatszerk. is megfelel), egyikbe a piros 	labdák, másikba a nem piros labdák kerüljenek. //1pont
+	
+	vector<labda> labdak;
+	labda temp;
+	
+	for(int i = 0; i<5; i++){
+		cout << "Adja meg a labda színét és méretét!" << endl;
+		cin >> temp.szin >> temp.meret;
+		labdak.push_back(temp);
+	}
+	
+	vector<labda> pirosak;
+	vector<labda> nempirosak;
+	
+	for(labda l : labdak){
+		if(l.szin == "piros"){
+			pirosak.push_back(l);
+		} else {
+			nempirosak.push_back(l);
+		}
+	}
+	
+	cout << "Piros labdák: "<<endl;
+	for(labda l : pirosak){
+		cout << l.szin << " " << l.meret << endl;
+	}
+	cout<< endl << "Nem piros labdák: " << endl;
+	for(labda l : nempirosak){
+		cout << l.szin << " " << l.meret << endl;
+	}
+	
+	//6. feladat
+	//Lottó doksi beolvasás 1 pont, kiszámolás, kiiírás 1 pont
+	//A számok gyakoriságát írjuk ki a gyakorisag.txt-be
+	
+	ifstream input;
+	input.open("doksi");
+	
+	vector<int> szamok;
+	int t;
+	
+	while( input >> t ){
+		szamok.push_back(t);
+	}
+	map<int, int> elofordulasok;
+	
+	for(int i : szamok){
+		elofordulasok[i] = 0;
+	}
+	
+	for(int i : szamok){
+		elofordulasok[i]++;
+	}
+	
+	ofstream out;
+	out.open("gyakorisagok.txt");	
+	//for(std::pair<int, int> a : elofordulasok)
+	for(auto a : elofordulasok){
+		//cout << a.first << " " << a.second << endl;
+		out << a.first << " " << a.second << endl;
+	}
+	out.close();
+	
+	//feladat: lottó doksi
+	// írjuk ki az oszlopmaximumokat.
+	
+	ifstream input2d;
+	input2d.open("doksi");
+	int tomb2d[4][5];
+	for(int i = 0; i<4; i++){
+		for(int j = 0; j <5 ; j++){
+			input2d >> tomb2d[i][j];
+		}
+	}
+	int oszlopmax[5] = {0};
+	
+	for(int i = 0; i<5; i++){
+		for(int j = 0; j<4 ; j++){
+			if(tomb2d[j][i] > oszlopmax[i]){
+				oszlopmax[i] = tomb2d[j][i];
+			}
+		}
+	}
+	
+	for(int i : oszlopmax){
+		cout << i << " " ;
+	}
+	cout << endl;
+	
+	input.close();
+
+	return 0;
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ZH ANYAG
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. Írjon függvényt, amelynek két integer paramétere van, a visszatérési értéke pedig a
+két szám közötti legkisebb közös többszöröse.
+
+#include <iostream>
+using namespace std;
+
+int lkkt(int a, int b){
+    int lcm;
+    if(a>b){
+        lcm = a;
+    } else {
+        lcm = b;
+    }
+    while(1) {
+      if( lcm%a==0 && lcm%b==0 ) {
+         break;
+      }
+      lcm++;
+   }
+   return lcm;
+}
+
+2. Írjon függvényt, amelynek egy 5x5-ös kétdimenziós tömb a paramétere és visszaadja
+a soronkénti maximum és minimum különbségét egy 5 méretű tömbben.
+int main() {
+    cout << lkkt(5,7) << endl;
+}
+
+#include <iostream>
+#include <vector>
+#include <fstream>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+
+void kulon(int matrix[5][5]){
+    vector<int> szamok;
+    int sorkicsi = INT_MAX;
+    int sormax = INT_MIN;
+    int kulonbseg;
+    for(int i = 0; i<5;i++){
+    sorkicsi = INT_MAX;
+    sormax = INT_MIN;
+        for(int j = 0; j<5;j++){
+            if(matrix[i][j]>sormax){
+                sormax = matrix[i][j];
+             }
+            if(matrix[i][j]<sorkicsi){
+                 sorkicsi = matrix[i][j];
+             }
+        }
+        kulonbseg = sormax-sorkicsi;
+        szamok.push_back(kulonbseg);
+    }
+    for(int i : szamok){
+        cout << i << " "; 
+    } cout << endl;
+}
+
+int main(){
+
+    int matrix[5][5] = {
+            {1,2,3,4,5},
+            {6,7,8,9,70},
+            {1,2,80,4,5},
+            {1,2,3,4,5},
+            {5,4,3,2,1}
+    };
+    kulon(matrix);
+
+    return 0;
+}
+
+3. Írjon függvényt, amelynek 3 integer paramétere van (a, b, c). A legkisebb és
+legnagyobb értéket írja felül 0-ra, majd cserélje meg az a és c, majd a b és a változók
+értékét. A függvény visszatérési értéke void. (a&lt;-&gt;c, b&lt;-&gt;a)
+
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+void ertekcsere(int& a, int& b, int& c) {
+    // Legkisebb és legnagyobb érték felülírása 0-ra
+    int min_ertek = min({a, b, c});
+    int max_ertek = max({a, b, c});
+    if (min_ertek > 0)
+        min_ertek = 0;
+    if (max_ertek > 0)
+        max_ertek = 0;
+
+    // Értékcsere a és c között
+    int temp = a;
+    a = c;
+    c = temp;
+
+    // Értékcsere b és a között
+    temp = b;
+    b = a;
+    a = temp;
+}
+
+int main() {
+    int a, b, c;
+    cout << "Kerem adjon meg harom egesz szamot (a, b, c): ";
+    cin >> a >> b >> c;
+
+    ertekcsere(a, b, c);
+
+    cout << "Az ertekcsere utan: " << endl;
+    cout << "a: " << a << endl;
+    cout << "b: " << b << endl;
+    cout << "c: " << c << endl;
+
+    return 0;
+}
+
+4. Kérjen be a felhasználótól egy egész számot (a), 5 db szóköz nélküli stringet. Írja ki a
+képernyőre azokat, amelyek hossza az kisebb, mint az összes szóban található „a”
+betűk számossága. darab(a)
+
+#include <iostream>
+#include <vector>
+#include <fstream>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+int main(){
+    
+    cout << "4. feladat" << endl;
+
+    vector<string> mondatok;
+    string temp;
+    int mondatokchar = 0;
+    int sorchar[5] = {0};
+    for(int i = 0 ; i<5; i++){
+        cout << "adjon meg 5 szokoz nelkuli stringet: " << endl;
+        cin >> temp;
+        mondatok.push_back(temp);
+        sorchar[i] = temp.length();
+        mondatokchar += temp.length();
+    }
+   
+    int a_betuk_szama = 0;
+    for (const string& sor : mondatok) {
+        for (char betu : sor) {
+            if (betu == 'a') {
+                ++a_betuk_szama;
+            }
+        }
+    }
+    for (const string& sor : mondatok) {
+        if(sor.length()<a_betuk_szama){
+            cout << sor << endl;
+        }
+    }
+
+    return 0;
+}
+
+5. Hozzon létre egy osztályt vagy struktúrát Banan néven, amelynek van súlya,
+minősége(„A vagy B”), egy bool adattagja, amely jelzi, hogy bio-e. (10, „A”,1) Töltsön
+fel egy 5 méretű tömböt banánokkal. Rendezze a tömböt súly szerint.
+
+
+#include <iostream>
+#include <vector>
+#include <fstream>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+struct banan{
+    int suly;
+    string minoseg;
+    bool bio;
+};
+ 
+ 
+ int main(){
+    cout << "5. feladat" << endl;
+    vector<banan> bananok;
+    banan temp;
+
+    for(int i = 0;i<5;i++){
+            cout << "suly minoseg bio" << endl;
+            cin >> temp.suly >> temp.minoseg >> temp.bio;
+            bananok.push_back(temp);
+    }
+    
+    for(banan b : bananok){
+        cout << b.suly << " " << b.minoseg << " " << b.bio << endl;
+    }
+
+    // Banánok rendezése súly szerint
+    sort(bananok.begin(), bananok.end(), [](const banan& a, const banan& b) {
+        return a.suly < b.suly;
+    });
+
+    // Rendezett banánok kiírása
+    for (const banan& b : bananok) {
+        cout << b.suly << " " << b.minoseg << " " << b.bio << endl;
+    }
+        
+return 0;
+ }
+
+6. Olvassa be a sorok.txt állományt egy tetszőleges adatszerkezetbe. Írja ki a
+gyakori.txt-be a legritkábban előforduló betűt és számosságát, valamint a nagy betűk
+számát.
+sorok.txt:
+Az alma piros
+A fű zöld
+Az ég kék
+A banán sárga
+Az alma zöld
+
+#include <iostream>
+#include <fstream>
+#include <map>
+
+using namespace std;
+
+bool isAlpha(char ch) {
+    return (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z');
+}
+
+bool isUpper(char ch) {
+    return (ch >= 'A' && ch <= 'Z');
+}
+
+int main() {
+    // Fájl beolvasása
+    ifstream inputFile("sorok.txt");
+    if (!inputFile) {
+        cerr << "Nem sikerült megnyitni a sorok.txt fájlt." << endl;
+        return 1;
+    }
+
+    // Karakterek gyakoriságának tárolása
+    map<char, int> charFrequency;
+    int uppercaseCount = 0;
+    char ch;
+
+    while (inputFile.get(ch)) {
+        if (isAlpha(ch)) {  // Csak betűket vizsgálunk
+            charFrequency[ch]++;
+            if (isUpper(ch)) {
+                uppercaseCount++;
+            }
+        }
+    }
+
+    inputFile.close();
+
+    // Legritkábban előforduló betű keresése
+    char rarestChar = '\0';
+    int minFrequency = -1;  // Kezdőértéknek egy lehetetlen negatív számot választunk
+
+    for (const auto& pair : charFrequency) {
+        if (minFrequency == -1 || pair.second < minFrequency) {
+            minFrequency = pair.second;
+            rarestChar = pair.first;
+        }
+    }
+
+    // Eredmények kiírása a gyakori.txt fájlba
+    ofstream outputFile("gyakori.txt");
+    if (!outputFile) {
+        cerr << "Nem sikerült megnyitni a gyakori.txt fájlt." << endl;
+        return 1;
+    }
+
+    outputFile << "Legritkábban előforduló betű: " << rarestChar << " ("
+               << minFrequency << " alkalommal)" << endl;
+    outputFile << "Nagybetűk száma: " << uppercaseCount << endl;
+
+    outputFile.close();
+
+    return 0;
+}
+

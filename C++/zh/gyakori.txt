@@ -1,0 +1,2 @@
+Legritkábban előforduló betű: b (1 alkalommal)
+Nagybetűk száma: 5
