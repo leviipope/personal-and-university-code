@@ -1,0 +1,51 @@
+h1{
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: double;
+    border-left-width: 8px;
+    border-left-color: red;
+}
+
+#p0{
+    border-style: solid;
+    border-width: 5px;
+    border-color: gold;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+
+
+#p1{
+    border-style: solid;
+}
+
+#p2{
+    border-style: dashed;
+}
+
+#p3{
+    border-style: dotted;
+}
+
+#p4{
+    border-style: double;
+}
+
+#p5{
+    border-style: ridge;
+}
+
+#p6{
+    border-style: groove;
+}
+
+#p7{
+    border-style: inset;
+}
+
+#p8{
+    border-style: outset;
+}
+
