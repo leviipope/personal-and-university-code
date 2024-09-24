@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE play SYSTEM "hamlet.dtd">
+<?xml-stylesheet href="hamlet.css" type="text/css"?>
+<play>
+    <author>William Shakespeare</author>
+    <title>The Tragedy of Hamlet, Prince of Denmark</title>
+    <act>
+        <title>ACT I</title>
+        <scene>
+            <title>SCENE V. Another part of the platform.</title>
+            <speech>
+                <character>HAMLET</character>
+                <line>O all you host of heaven! O earth! What else?</line>
+                <line>And shall I couple hell? O, fie! Hold, hold, my heart;</line>
+                <line>And you, my sinews, grow not instant old,</line>
+                <line>But bear me stiffly up. Remember thee!</line>
+            </speech>
+            <stagedir>Enter HORATIO and MARCELLUS</stagedir>
+            <speech>
+                <character>HORATIO</character>
+                <line>[Within] My lord, my lord,--</line>
+                <character>MARCELLUS</character>
+                <line>[Within] Lord Hamlet,--</line>
+                <character>HORATIO</character>
+                <line>[Within] Heaven secure him!</line>
+                <character>HAMLET</character>
+                <line>So be it!</line>
+                <character>HORATIO</character>
+                <line>[Within] Hillo, ho, ho, my lord!</line>
+                <character>HAMLET</character>
+                <line>Hillo, ho, ho, boy! come, bird, come.</line>
+            </speech>
+        
+        </scene>
+    </act>
+
+</play>

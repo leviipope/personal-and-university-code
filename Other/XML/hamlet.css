@@ -1,0 +1,8 @@
+play {
+    display: block;
+    border: 2px solid red;
+}
+
+line {
+    border: 2px solid blue;
+}
