@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE play SYSTEM "hamlet.dtd">
 <?xml-stylesheet href="hamlet.css" type="text/css"?>
+<!DOCTYPE play SYSTEM "hamlet.dtd">
+
 <play>
     <author>William Shakespeare</author>
     <title>The Tragedy of Hamlet, Prince of Denmark</title>
