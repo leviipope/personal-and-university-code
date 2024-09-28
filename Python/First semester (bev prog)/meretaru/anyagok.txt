@@ -1,0 +1,3 @@
+Muszlin:180:3590:természetes
+Kordbársony:150:5050:műszálas
+Faux-bőr:150:4200:műszálas
