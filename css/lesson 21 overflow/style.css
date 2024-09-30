@@ -1,0 +1,31 @@
+#d1{
+    border: 2px solid;
+    height: 75px;
+    overflow: visible; /*nothing changes*/
+}
+
+#d2{
+    border: 2px solid;
+    height: 75px;
+    overflow: hidden;
+}
+
+#d3{
+    border: 2px solid;
+    height: 75px;
+    overflow: clip;
+    overflow-clip-margin: 6px; /*set how much it can overflow*/
+}
+
+#d4{
+    border: 2px solid;
+    height: 75px;
+    overflow: scroll;
+}
+
+#d5{
+    border: 2px solid;
+    height: 75px;
+    overflow: auto;
+}
+
