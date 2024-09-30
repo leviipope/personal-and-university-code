@@ -1,0 +1,45 @@
+body{
+    background-color: #181A1B;
+    color: #272727;
+}
+.container{
+    display: flex;
+    border: 10px solid white; /*just for demonstration purposes*/
+    height: 90vh; /*viewport height units (90% of vp height height*/
+    /*
+    flex-direction = row (default), row-reverse, column, column-reverse
+    justify-content = sets the alignment on the X axis
+                      flex-start, flex-end, center, space-between, space-around, space-evenly
+    align-items = postions items in the container
+                      flex-start (default), flex-end, center, baseline (text is going to be aligned)
+    flex-wrap = wrap, nowrap (default), wrap reverse
+                used together with align-content
+    align-content = flex-start, flex-end, center, space-evenly, space-between
+    column-gap: 2em;
+    row-gap: 2em;
+    */
+}
+.box{
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+}
+#box1{
+    background-color: #646464;
+
+}
+#box2{
+    background-color: rgb(133, 133, 133);
+    /*align-self = align only one element*/
+    order: 1; /* 1  = last item
+                 -1 = first item */
+}
+#box3{
+    background-color: rgb(111, 148, 150);
+    order: -1;
+}
+#box4{
+    background-color: rgb(59, 82, 82);
+}
