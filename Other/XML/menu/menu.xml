@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE menu SYSTEM "menu.dtd">
+<?xml-stylesheet href="menu.css" type="text/css"?>
+<menu name="Main">
+    <menu name="Save">
+        <item name="Save" />
+        <item name="New" />
+        <separator />
+        <item name="Exit" />
+    </menu>
+    <menu name="Help">
+
+    </menu>
+</menu>

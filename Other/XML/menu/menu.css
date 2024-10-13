@@ -1,0 +1,15 @@
+* {
+    display: block;
+}
+menu::before {
+    content: attr(name);
+}
+item::before {
+    content: attr(name);
+}
+separator{
+    border-top: medium solid black;
+}
+menu menu{
+    margin-left: 1em;
+}

@@ -1,0 +1,66 @@
+*{
+    display: block;
+    text-align: center;
+}
+collection{
+    background-color: rgb(212, 255, 221);
+    counter-reset: collection;
+}
+collection:before {
+    content: attr(username)"'s collection";
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1rem;
+}
+set{
+    background-color: rgb(231, 208, 0);
+    padding: 0.25rem;
+    margin-bottom: 2rem;
+}
+name:before{
+    counter-increment: collection;
+    content: counter(collection) ". ";
+    font-size: small;
+}
+name:after{
+    content: ": ";
+}
+name, code{
+    display: inline-block;
+}
+pieces{
+    background-color: white;
+    border: 1px solid rgb(0, 0, 0);
+    margin-bottom: 1rem;
+}
+counter{
+    padding: 0.5rem;
+}
+pieces > *:nth-child(odd){
+    background-color: rgb(199, 129, 0);
+}
+piece + minifig {
+    font-weight: bold;
+}
+piece:hover ,minifig:hover{
+    background-color: aqua;
+}
+counter:before{
+    content: "pieces: ";
+}
+counter:after{
+    content: " from this is minifig: " attr(minifig-count);
+}
+price{
+    font-weight: bold;
+}
+price:before{
+    content: "Price in " attr(currency)": ";
+}
+price:after{
+    content: attr(symbol);
+}
+price:is([currency=HUF]){
+    background-color: red;
+}

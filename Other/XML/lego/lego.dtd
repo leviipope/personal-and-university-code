@@ -1,0 +1,17 @@
+<!ELEMENT collection (set*)>
+<!ATTLIST collection 
+    username CDATA #REQUIRED>
+<!ELEMENT set (name, code, pieces,price+)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT code (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST price
+    currency CDATA #REQUIRED
+    symbol CDATA #IMPLIED>
+<!ELEMENT pieces (counter, (piece | minifig)*)>
+<!ELEMENT counter (#PCDATA)>
+<!ATTLIST counter minifig-count CDATA #REQUIRED>
+<!ELEMENT piece (#PCDATA)>
+<!ATTLIST piece code CDATA #REQUIRED>
+<!ELEMENT minifig (#PCDATA)>
+<!ATTLIST minifig code CDATA #REQUIRED>

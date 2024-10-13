@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE collection SYSTEM "lego.dtd">
+<?xml-stylesheet href="lego.css" type="text/css"?>
+<collection username="leviipope">
+    <set>
+        <name>Mentoauto</name>
+        <code>11111</code>
+        <pieces>
+            <counter minifig-count="3">185</counter>
+            <piece code="1001">1x2 hosszu blokk</piece>
+            <minifig code="1">Rendor figura</minifig>
+            <minifig code="2">Tuzolto figura</minifig>
+            <piece code="1000">3x4 blokk</piece>
+        </pieces>
+        <price currency="HUF">200000000</price>
+        <price currency="USD" symbol="$">1</price>
+    </set>
+    <set>
+        <name>Harry Potter</name>
+        <code>22222</code>
+        <pieces>
+            <counter minifig-count="5">1850</counter>
+        </pieces>
+        <price currency="EUR" symbol="€">20000</price>
+        <price currency="szotyi">100000000000000000</price>
+    </set>
+</collection>

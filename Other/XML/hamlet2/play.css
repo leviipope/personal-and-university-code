@@ -1,0 +1,74 @@
+* {
+    display: block;
+}
+play{
+    background-color: whitesmoke;
+    font-family: Palatino, Times, serif;
+    padding: 1em;
+    counter-reset: line_counter;
+}
+
+/*
+speech {
+counter-reset: line_counter;
+}
+*/
+
+author, title {
+    font-variant: small-caps;
+    text-align: center;
+}
+
+author, play > title {
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+
+play > title {
+    font-size: xx-large;
+    margin-top: 1rem;
+}
+
+scene > title {
+    background-color: blue;
+    color: white;
+    box-shadow: 0.25em 0.25em 0.25em grey;
+    padding: 0.5em;
+}
+
+act {
+    border-top: medium solid black;
+    margin-top: 1rem;
+}
+
+speaker{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+speech > line, speech > stagedir{
+    padding-left: 1rem;
+}
+
+stagedir{
+    color: grey;
+    font-style: italic;
+}
+
+stagedir::before{
+    content: "(";
+}
+stagedir::after{
+    content: ")";
+}
+scene > stagedir{
+    text-align: center;
+}
+speech > line:hover {
+    background-color: lime;
+    color: white;
+}
+speech > line:before{
+    content: "[" counter(line_counter) "] ";
+    counter-increment: line_counter;
+}
