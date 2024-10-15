@@ -1,0 +1,11 @@
+
+<!ELEMENT jatekok (jatek*)>
+<!ELEMENT jatek (cim, ido, platforms, ertekeles, leiras)>
+<!ELEMENT cim (#PCDATA)>
+<!ELEMENT ido (#PCDATA)>
+<!ELEMENT platforms (platform*)>
+<!ELEMENT platform (#PCDATA)>
+<!ELEMENT ertekeles (#PCDATA)>
+<!ATTLIST ertekeles
+     ertek (exceptional | recommended | meh | skip) #REQUIRED>
+<!ELEMENT leiras (#PCDATA)>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE jatekok SYSTEM "feladat.dtd">
+<?xml-stylesheet href="feladat.css" type="text/css"?>
+<jatekok>
+     <jatek>
+          <cim>Vampire: The Masquerade - Bloodlines 2</cim>
+          <ido>2 hours</ido>
+          <platforms>
+               <platform>PC</platform>
+               <platform>XBOX</platform>
+               <platform>Playstation</platform>
+          </platforms>
+          <ertekeles ertek="exceptional"></ertekeles>
+          <leiras>Sired in an act of vampire insurrection, your existence ignites the war for Seattle's blood trade. Enter uneasy alliances with the creatures who control the city and uncover the sprawling conspiracy which plunged Seattle into a bloody civil war between powerful vampire factions.</leiras>
+     </jatek>
+     <jatek>
+          <cim>Core Keeper</cim>
+          <ido>40 hours</ido>
+          <platforms>
+               <platform>XBOX</platform>
+               <platform>Playstation</platform>
+          </platforms>
+          <ertekeles ertek="recommended"></ertekeles>
+          <leiras>Drawn towards a mysterious relic, you are an explorer who awakens in an ancient cavern of creatures, resources and trinkets. Trapped deep underground will your survival skills be up to the task?</leiras>
+     </jatek>
+     <jatek>
+          <cim>Hollow Knight: Silksong</cim>
+          <ido>20 hours</ido>
+          <platforms>
+               <platform>XBOX</platform>
+               <platform>PC</platform>
+               <platform>Nintendo</platform>
+               <platform>Playstation</platform>
+          </platforms>
+          <ertekeles ertek="exceptional"></ertekeles>
+          <leiras>Hollow Knight: Silksong is the epic sequel to Hollow Knight, the epic action-adventure of bugs and heroes. As the lethal hunter Hornet, journey to all-new lands, discover new powers, battle vast hordes of bugs and beasts and uncover ancient secrets tied to your nature and your past.</leiras>
+     </jatek>
+     <jatek>
+          <cim>Core Keeper</cim>
+          <ido>40 hours</ido>
+          <platforms>
+               <platform>XBOX</platform>
+               <platform>Playstation</platform>
+          </platforms>
+          <ertekeles ertek="skip"></ertekeles>
+          <leiras>Drawn towards a mysterious relic, you are an explorer who awakens in an ancient cavern of creatures, resources and trinkets. Trapped deep underground will your survival skills be up to the task?</leiras>
+     </jatek>
+     <jatek>
+          <cim>Little Devil Inside</cim>
+          <ido>25 hours</ido>
+          <platforms>
+               <platform>XBOX</platform>
+          </platforms>
+          <ertekeles ertek="recommended"></ertekeles>
+          <leiras>Explore, discover, adapt, fight and survive experience a world filled with atmospheric contrasts embark on hostile missions and journeys that challenge your survival instincts and the choices you make.</leiras>
+     </jatek>
+     <jatek>
+          <cim>Frostpunk 2</cim>
+          <ido>40 hours</ido>
+          <platforms>
+               <platform>XBOX</platform>
+               <platform>Playstation</platform>
+          </platforms>
+          <ertekeles ertek="recommended"></ertekeles>
+          <leiras>Drawn towards a mysterious relic, you are an explorer who awakens in an ancient cavern of creatures, resources and trinkets. Trapped deep underground will your survival skills be up to the task?</leiras>
+     </jatek>
+     <jatek>
+          <cim>Death Stranding 2: On The Beach</cim>
+          <ido>10 hours</ido>
+          <platforms>
+               <platform>Playstation 5</platform>
+          </platforms>
+          <ertekeles ertek="skip"></ertekeles>
+          <leiras>Discover a city-survival game set 30 years after an apocalyptic blizzard ravaged Earth, transforming our world into a harsh, icy wasteland. In Frostpunk 2, you must face a new deadly threat that appears on the horizon – human nature and its unsatiated thirst for power.</leiras>
+     </jatek>
+</jatekok>

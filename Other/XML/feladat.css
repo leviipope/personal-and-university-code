@@ -1,0 +1,82 @@
+jatekok{
+     display: flex;
+     flex-wrap: wrap;
+     column-gap: 3rem;
+     row-gap: 3rem;
+     background-color: rgb(68, 68, 68);
+     color: white;
+     font-size: 1.05rem;
+     margin: 2rem;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+jatek{
+     flex-grow: 1;
+     width: 300px;
+     background-color: rgb(44, 44, 44);
+     border-radius: 15px;
+     padding: 1rem;
+}
+cim{
+     display: block;
+     font-size: 2rem;
+     font-weight: bold;
+     margin-bottom: 1rem;
+}
+ertekeles:before{
+     display: block;
+     content: attr(ertek);
+     margin-bottom: 0.2rem;
+     margin-top: 0.2rem;
+     text-transform: uppercase;
+     padding: 0.2rem;
+     padding-top: 0rem;
+}
+ido{
+     display: block;
+     margin-bottom: 1rem;
+}
+platforms{
+     display: block;
+     margin-bottom: 0.75rem;
+}
+platform{
+     border: 2px solid black;
+     border-radius: 10px;
+     padding: 0.3rem;
+     background-color: black;
+}
+leiras{
+     display: block;
+}
+ertekeles:is([ertek=exceptional]){
+     border-radius: 10px;
+     font-weight: bold;
+     color: green;
+     display: block;
+     width: fit-content;
+     background-color: greenyellow;
+}
+ertekeles:is([ertek=recommended]){
+     border-radius: 10px;
+     font-weight: bold;
+     color: yellow;
+     display: block;
+     width: fit-content;
+     background-color: turquoise;
+}
+ertekeles:is([ertek=meh]){
+     font-weight: bold;
+     border-radius: 10px;
+     color: orange;
+     display: block;
+     width: fit-content;
+     background-color: greenyellow;
+}
+ertekeles:is([ertek=skip]){
+     border-radius: 10px;
+     font-weight: bold;
+     color: red;
+     display: block;
+     width: fit-content;
+     background-color: rebeccapurple;
+}
