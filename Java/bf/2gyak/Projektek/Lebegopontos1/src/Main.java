@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        double[] numbers = new double[10];
+        double[] numbers = new double[2];
 
         for(int i = 0; i< numbers.length; i++){
             System.out.println("Kérek egy számot!: ");
