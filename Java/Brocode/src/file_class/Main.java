@@ -1,4 +1,4 @@
-package FileClass;
+package file_class;
 
 import java.io.File;
 
