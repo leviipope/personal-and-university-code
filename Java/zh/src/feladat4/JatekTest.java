@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class JatekTest {
     private Jatek jatek;
-
+    // A testhez bekell importalni a junit.jupiter -t
     @BeforeEach
     public void setUp() {
         jatek = new Jatek(); // Initialize the game before each test
