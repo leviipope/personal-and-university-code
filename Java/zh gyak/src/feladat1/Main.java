@@ -114,6 +114,8 @@ public class Main {
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
+
+
     }
 
     // D1 kozeli lejarat
