@@ -100,8 +100,20 @@ public class Main {
             }
         });
 
-        // E2
+        // E2 (a comparator kulon class)
         Collections.sort(dragaEtelek, new EtelComparator());
+
+        // G
+        // Kiiratas Fileba
+        ArrayList<Etel> olcsoEsDraga = olcsoEsDragaEtelek(etelArrayList);
+        try(Formatter formatter = new Formatter(new File("etel_output.txt"))) {
+            formatter.format("Legolcsobb: %s ", olcsoEsDraga.get(1).getNev());
+            formatter.format("Ar: %s\n", olcsoEsDraga.get(1).getAr());
+            formatter.format("Legdragabb: %s ", olcsoEsDraga.get(0).getNev());
+            formatter.format("Ar: %s", olcsoEsDraga.get(0).getAr());
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     // D1 kozeli lejarat
