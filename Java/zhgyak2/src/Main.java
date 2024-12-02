@@ -81,4 +81,55 @@ public class Main {
             etelHashMap.put(etel.getEtelTipus(), al);
         }
     }
+
+    // D1
+    public static List<Etel> lejaratKozel(HashMap<String, Etel> etelHashMap, LocalDate date) {
+        List<Etel> etelList = new ArrayList<>();
+
+        for(Etel etel : etelHashMap.values()){
+            if(etel.getLejaratDatuma().isBefore(date)){
+                etelList.add(etel);
+            }
+        }
+        return etelList;
+    }
+
+    // D2
+    public static List<Etel> dragaEtel(ArrayList<Etel> etelArrayList) {
+        List<Etel> etelList = new ArrayList<>();
+        double osszeg = 0;
+        for(Etel etel : etelArrayList) {
+            osszeg+=etel.getAr();
+        }
+        for(Etel etel : etelArrayList) {
+            if(etel.getAr()>osszeg/etelArrayList.size()) {
+                etelList.add(etel);
+            }
+        }
+        return etelList;
+    }
+
+    // D3
+    public static ArrayList<Etel> olcsoEsDragaEtel(ArrayList<Etel> etelArrayList) {
+        double min = Double.MAX_VALUE;
+        double max = Double.MIN_VALUE;
+        for(Etel etel : etelArrayList) {
+            if(etel.getAr()<min) {
+                min = etel.getAr();
+            }
+            if(etel.getAr()>max) {
+                max = etel.getAr();
+            }
+        }
+        ArrayList<Etel> etelek = new ArrayList<>();
+        for(Etel etel : etelArrayList) {
+            if (etel.getAr() == min) {
+                etelek.add(etel);
+            }
+            if (etel.getAr() == max) {
+                etelek.add(etel);
+            }
+        }
+        return etelek;
+    }
 }

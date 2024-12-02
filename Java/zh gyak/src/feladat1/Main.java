@@ -55,7 +55,7 @@ public class Main {
             etelList.add(etel);
         }
 
-        // TreeSet
+        // TreeSet (rendezve nev szerint)
         TreeSet<Etel> etelTreeSet = new TreeSet<>(new Comparator<Etel>() {
             @Override
             public int compare(Etel o1, Etel o2) { return o1.getNev().compareTo(o2.getNev());}
@@ -88,6 +88,19 @@ public class Main {
 //            System.out.println(entry.getKey() + " " + entry.getValue());
 //        }
         System.out.println(dragaEtel(etelArrayList));
+
+        // E1
+        // Elemek rendezese (Ar szerint csokkeno majd nev abc szerint novekvo)
+        List<Etel> dragaEtelek = dragaEtel(etelArrayList);
+        Collections.sort(dragaEtelek, new Comparator<Etel>() {
+            @Override
+            public int compare(Etel o1, Etel o2) {
+                int v = (int)(o1.getAr()-o2.getAr());
+                if(v!=0) return v;
+                return o1.getNev().compareTo(o2.getNev());
+            }
+        });
+        System.out.println(dragaEtelek);
     }
 
     // D1 kozeli lejarat
