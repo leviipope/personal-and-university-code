@@ -87,7 +87,6 @@ public class Main {
 //        for(Map.Entry<String, ArrayList<Etel>> entry : etelHashMap.entrySet()){
 //            System.out.println(entry.getKey() + " " + entry.getValue());
 //        }
-        System.out.println(dragaEtel(etelArrayList));
 
         // E1
         // Elemek rendezese (Ar szerint csokkeno majd nev abc szerint novekvo)
@@ -100,7 +99,9 @@ public class Main {
                 return o1.getNev().compareTo(o2.getNev());
             }
         });
-        System.out.println(dragaEtelek);
+
+        // E2
+        Collections.sort(dragaEtelek, new EtelComparator());
     }
 
     // D1 kozeli lejarat
