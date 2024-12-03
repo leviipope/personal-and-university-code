@@ -45,10 +45,9 @@ public class Main {
 
             // Group crystals by price into a Map, with names as values
             Object Crystal;
-            Map<Integer, List<String>> crystalsByPrice = crystals.stream()
+            Map<Integer, List<Crystals>> crystalsByPrice = crystals.stream()
                     .collect(Collectors.groupingBy(
-                            Crystals::getPrice,
-                            Collectors.mapping(Crystals::getName, Collectors.toList())
+                            Crystals::getPrice
                     ));
 
             // Print the map
