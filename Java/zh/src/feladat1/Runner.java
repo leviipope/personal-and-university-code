@@ -19,8 +19,7 @@ public class Runner {
                 int availableRooms = Integer.parseInt(parts[2]);
                 int bookedRooms = Integer.parseInt(parts[3]);
 
-                Hotel hotel = new Hotel(hotelName, rooms, availableRooms, bookedRooms);
-                hotelMap.put(hotelName, hotel);
+                hotelMap.put(hotelName, new Hotel(hotelName, rooms, availableRooms, bookedRooms));
             }
 
             System.out.println("Loaded successfully");

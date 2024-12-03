@@ -1,0 +1,22 @@
+The Catcher in the Rye;J.D. Salinger;1951;Fiction;9780316769488
+To Kill a Mockingbird;Harper Lee;1960;Fiction;9780061120084
+1984;George Orwell;1949;Dystopian;9780451524935
+The Great Gatsby;F. Scott Fitzgerald;1925;Classics;9780743273565
+Moby-Dick;Herman Melville;1851;Adventure;9781853260087
+Pride and Prejudice;Jane Austen;1813;Romance;9781503290563
+The Hobbit;J.R.R. Tolkien;1937;Fantasy;9780345339683
+Harry Potter and the Sorcerer's Stone;J.K. Rowling;1997;Fantasy;9780590353427
+The Lord of the Rings;J.R.R. Tolkien;1954;Fantasy;9780618640157
+The Chronicles of Narnia;C.S. Lewis;1950;Fantasy;9780066238500
+The Picture of Dorian Gray;Oscar Wilde;1890;Philosophical;9780141439570
+Brave New World;Aldous Huxley;1932;Dystopian;9780060850524
+Crime and Punishment;Fyodor Dostoevsky;1866;Psychological Fiction;9780486415871
+Frankenstein;Mary Shelley;1818;Gothic;9780486282114
+The Catcher in the Rye;T.D. Salinger;1951;Fiction;9780316769488
+Anna Karenina;Teo Tolstoy;1877;Classic;9780143035008
+Che Road;Tormac McCarthy;2006;Post-apocalyptic;9780307387899
+Bhe Road;Tormac McCarthy;2006;Post-apocalyptic;9780307387899
+Ahe Road;Tormac McCarthy;2006;Post-apocalyptic;9780307387899
+The Hunger Games;Suzanne Collins;2008;Dystopian;9780439023528
+The Odyssey;Tomer;1856;Epic Poetry;9780140268867
+Wuthering Heights;Emily Brontë;1847;Gothic Romance;9780141439556
