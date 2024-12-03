@@ -24,15 +24,15 @@ public class Main {
                     new TypeReference<List<Crystals>>() {}
             );
 
-            // Use Stream to print each crystal
-            crystals.stream().forEach(System.out::println);
-            System.out.println("\n");
+            // Use forEach to print each crystal
+            crystals.forEach(System.out::println);
+            System.out.println();
 
             // Use Stream to filter and print crystals with a price higher than 250
             crystals.stream()
                     .filter(crystal -> crystal.getPrice() > 250)
                     .forEach(System.out::println);
-            System.out.println("\n");
+            System.out.println();
 
             // Use Stream to calculate the average hardness
             double avgHardness = crystals.stream()
@@ -41,9 +41,9 @@ public class Main {
                     .orElse(0.0);
 
             System.out.println("Avg Hardness: " + avgHardness);
-            System.out.println("\n");
+            System.out.println();
 
-            // Group crystals by price, with names as values
+            // Group crystals by price into a Map, with names as values
             Object Crystal;
             Map<Integer, List<String>> crystalsByPrice = crystals.stream()
                     .collect(Collectors.groupingBy(

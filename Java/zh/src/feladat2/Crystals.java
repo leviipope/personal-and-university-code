@@ -41,7 +41,4 @@ public class Crystals {
                 ", price=" + price +
                 '}';
     }
-
-    public Crystals(){}
-
 }
