@@ -24,8 +24,41 @@ public class Runner {
             orvosokSet.add(orvos);
         }
 
-        //1.3.d
+        List<Orvos> forgalmasOrvosokList = forgalmasOrvosok(orvosokSet,"Oncology");
+        Collections.sort(forgalmasOrvosokList, new Comparator<>() {
+            @Override
+            public int compare(Orvos o1, Orvos o2) {
+                return o2.getBetegekSzama()-o1.getBetegekSzama();
+            }
+        });
+        for(Orvos orvos : forgalmasOrvosokList){
+            System.out.println(orvos);
+        }
+
+        try(Formatter formatter = new Formatter(new File("orvos_output.txt"))){
+            formatter.format("Orvos neve: %s\n",forgalmasOrvosokList.get(0).getNev());
+            formatter.format("Betegeinek Száma: %d",forgalmasOrvosokList.get(0).getBetegekSzama());
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
 
 
+    }
+
+    public static List<Orvos> forgalmasOrvosok(HashSet<Orvos> orvosHashSet, String szakirany){
+        List<Orvos> forgalmasOrvosok = new ArrayList<>();
+        double sumBeteg = 0;
+        for(Orvos orvos : orvosHashSet){
+            sumBeteg += orvos.getBetegekSzama();
+        }
+        System.out.println("avg betegek száma: " + sumBeteg/orvosHashSet.size());
+        for(Orvos orvos : orvosHashSet){
+            if(orvos.getSzakirany().equals(szakirany)){
+                if(orvos.getBetegekSzama()>=sumBeteg/orvosHashSet.size()){
+                    forgalmasOrvosok.add(orvos);
+                }
+            }
+        }
+        return forgalmasOrvosok;
     }
 }
