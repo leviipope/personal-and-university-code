@@ -46,7 +46,6 @@ public class Runner {
         for(Hotel hotel : availableHotels){
             System.out.println(hotel.getHotelName());
         }
-
     }
 
     // 1/e

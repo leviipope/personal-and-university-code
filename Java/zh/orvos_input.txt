@@ -1,0 +1,20 @@
+Dr. Kovacs Bela;Cardiology;15;Budapest, Korhaz utca 5.;120
+Dr. Szabo Anna;Dermatology;10;Debrecen, Rakoczi utca 12.;85
+Dr. Nagy Peter;Orthopedics;20;Szeged, Petofi ter 8.;150
+Dr. Varga Ilona;Pediatrics;12;Pecs, Zsolnay utca 3.;100
+Dr. Toth Erika;Neurology;18;Gyor, Arpad utca 9.;95
+Dr. Kiss Ferenc;Psychiatry;22;Miskolc, Szechenyi utca 4.;80
+Dr. Horvath Judit;Ophthalmology;8;Nyiregyhaza, Bem ter 6.;110
+Dr. Balazs Lajos;Oncology;25;Kecskemet, Korhaz koz 2.;140
+Dr. Farkas Zoltan;Gynecology;16;Eger, Jokai utca 1.;90
+Dr. Molnar Krisztina;Gastroenterology;14;Szombathely, Varoshaza utca 7.;105
+Dr. Simon Bela;Urology;11;Kaposvar, Tancsics utca 10.;75
+Dr. Papp Janos;Endocrinology;13;Szekesfehervar, Kiraly utca 11.;65
+Dr. Nemeth Gabor;Radiology;7;Tatabanya, Bartok utca 15.;50
+Dr. Laszlo Aniko;Hematology;19;Sopron, Deak Ferenc utca 2.;85
+Dr. Polgar Tamas;Rheumatology;17;Erd, Ady Endre utca 8.;70
+Dr. Boros Csilla;Pulmonology;6;Veszprem, Kossuth utca 14.;55
+Dr. Szucs Dora;Immunology;9;Zalaegerszeg, Szechenyi ter 3.;45
+Dr. Pal Istvan;Anesthesiology;21;Bekescsaba, Andrassy utca 13.;60
+Dr. Sipos Csaba;Nephrology;23;Salgotarjan, Kossuth ter 7.;40
+Dr. Hegedus Timea;Dermatology;5;Vac, Arany Janos utca 2.;35
