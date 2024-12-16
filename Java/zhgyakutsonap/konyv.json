@@ -1,0 +1,22 @@
+[
+  {"id": 1, "cim": "1984", "szerzo": "George Orwell", "kiadasEve": 1949, "mufaj": "Dystopian", "ISBN": "9780451524935"},
+  {"id": 2, "cim": "Brave New World", "szerzo": "Aldous Huxley", "kiadasEve": 1932, "mufaj": "Dystopian", "ISBN": "9780060850524"},
+  {"id": 3, "cim": "To Kill a Mockingbird", "szerzo": "Harper Lee", "kiadasEve": 1960, "mufaj": "Fiction", "ISBN": "9780061120084"},
+  {"id": 4, "cim": "The Great Gatsby", "szerzo": "F. Scott Fitzgerald", "kiadasEve": 1925, "mufaj": "Novel", "ISBN": "9780743273565"},
+  {"id": 5, "cim": "The Catcher in the Rye", "szerzo": "J.D. Salinger", "kiadasEve": 1951, "mufaj": "Fiction", "ISBN": "9780316769488"},
+  {"id": 6, "cim": "Moby Dick", "szerzo": "Herman Melville", "kiadasEve": 1851, "mufaj": "Adventure", "ISBN": "9781503280786"},
+  {"id": 7, "cim": "Pride and Prejudice", "szerzo": "Jane Austen", "kiadasEve": 1813, "mufaj": "Romance", "ISBN": "9781503290563"},
+  {"id": 8, "cim": "War and Peace", "szerzo": "Leo Tolstoy", "kiadasEve": 1869, "mufaj": "Historical Fiction", "ISBN": "9781505577114"},
+  {"id": 9, "cim": "The Odyssey", "szerzo": "Homer", "kiadasEve": -800, "mufaj": "Epic", "ISBN": "9780140268867"},
+  {"id": 10, "cim": "The Hobbit", "szerzo": "J.R.R. Tolkien", "kiadasEve": 1937, "mufaj": "Fantasy", "ISBN": "9780345339683"},
+  {"id": 11, "cim": "The Lord of the Rings", "szerzo": "J.R.R. Tolkien", "kiadasEve": 1954, "mufaj": "Fantasy", "ISBN": "9780618640157"},
+  {"id": 12, "cim": "The Alchemist", "szerzo": "Paulo Coelho", "kiadasEve": 1988, "mufaj": "Adventure", "ISBN": "9780061122415"},
+  {"id": 13, "cim": "Crime and Punishment", "szerzo": "Fyodor Dostoevsky", "kiadasEve": 1866, "mufaj": "Psychological Fiction", "ISBN": "9780486415871"},
+  {"id": 14, "cim": "The Brothers Karamazov", "szerzo": "Fyodor Dostoevsky", "kiadasEve": 1880, "mufaj": "Philosophical Novel", "ISBN": "9780374528379"},
+  {"id": 15, "cim": "Don Quixote", "szerzo": "Miguel de Cervantes", "kiadasEve": 1605, "mufaj": "Novel", "ISBN": "9780060934347"},
+  {"id": 16, "cim": "One Hundred Years of Solitude", "szerzo": "Gabriel García Márquez", "kiadasEve": 1967, "mufaj": "Magical Realism", "ISBN": "9780060883287"},
+  {"id": 17, "cim": "Fahrenheit 451", "szerzo": "Ray Bradbury", "kiadasEve": 1953, "mufaj": "Dystopian", "ISBN": "9781451673319"},
+  {"id": 18, "cim": "The Picture of Dorian Gray", "szerzo": "Oscar Wilde", "kiadasEve": 1890, "mufaj": "Philosophical Novel", "ISBN": "9780141439570"},
+  {"id": 19, "cim": "The Divine Comedy", "szerzo": "Dante Alighieri", "kiadasEve": 1320, "mufaj": "Epic Poem", "ISBN": "9780140448955"},
+  {"id": 20, "cim": "Les Misérables", "szerzo": "Victor Hugo", "kiadasEve": 1862, "mufaj": "Historical Novel", "ISBN": "9780451419439"}
+]
