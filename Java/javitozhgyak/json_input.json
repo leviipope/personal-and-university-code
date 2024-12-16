@@ -1,0 +1,32 @@
+{
+  "adatok": [
+    {
+      "nev":"hortobagyi husos palacsinta",
+      "vonalkod":"001",
+      "ar":"8500",
+      "lejaratDatuma": "2024.12.01",
+      "etelTipus": "foetel"
+    },
+    {
+      "nev":"paprikas csirke",
+      "vonalkod":"004",
+      "ar":"7500",
+      "lejaratDatuma": "2024.11.29",
+      "etelTipus": "eloetel"
+    },
+    {
+      "nev":"linzer",
+      "vonalkod":"003",
+      "ar":"3000",
+      "lejaratDatuma": "2025.12.24",
+      "etelTipus": "desszert"
+    },
+    {
+      "nev":"barack",
+      "vonalkod":"0103",
+      "ar":"300",
+      "lejaratDatuma": "2025.12.29",
+      "etelTipus": "gyumolcs"
+    }
+  ]
+}
