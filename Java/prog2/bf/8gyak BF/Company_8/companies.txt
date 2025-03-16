@@ -1,0 +1,5 @@
+weCan,TB
+NI,KJB
+TATA Consulting,BG
+CosmoConsult,AZ
+IdomSoft,BA

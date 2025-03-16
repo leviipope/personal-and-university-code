@@ -1,0 +1,83 @@
+Company:
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Company [name=");
+		builder.append(name);
+		builder.append(", nameOfLeader=");
+		builder.append(nameOfLeader);
+		builder.append(", departments=");
+		builder.append(departments);
+		builder.append("]");
+		return builder.toString();
+	}
+
+
+Department:
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Department [id=");
+		builder.append(id);
+		builder.append(", name=");
+		builder.append(name);
+		builder.append(", employees=");
+		builder.append(employees);
+		builder.append("]");
+		return builder.toString();
+	}
+
+Person:
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Person [name=");
+		builder.append(name);
+		builder.append(", birthDate=");
+		builder.append(birthDate);
+		builder.append(", nickName=");
+		builder.append(nickName);
+		builder.append("]");
+		return builder.toString();
+	}
+
+
+Employee:
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Employee [id=");
+		builder.append(id);
+		if (this.department == null) {
+			builder.append(" Department [null]");
+		} else {
+			builder.append(" Department [id=");
+			builder.append(this.department.getId());
+			builder.append("; name=");
+			builder.append(this.department.getName());
+			builder.append("]");
+		}
+		builder.append(", toString()=");
+		builder.append(super.toString());
+		builder.append("]");
+		return builder.toString();
+	}
+
+EmployeeWithSizes:
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("EmployeeWithSizes [shoeSize=");
+		builder.append(shoeSize);
+		builder.append(", heightInCm=");
+		builder.append(heightInCm);
+		builder.append(", toString()=");
+		builder.append(super.toString());
+		builder.append("]");
+		return builder.toString();
+	}
