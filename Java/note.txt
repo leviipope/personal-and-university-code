@@ -1,6 +1,0 @@
-2024.12.01 - ott hagytam abba hogy megkell irni a D1-et lehetoleg magamtol
-
-Ha megtanulom lehet hogy megvan a kettes:
-- File beolvasas az osszes felekeppen
-- A methodokat megtanulni amik mar megvannak irva
-- File-ba kiiras

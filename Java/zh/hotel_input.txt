@@ -1,6 +1,0 @@
-Sunny Hotel;10;5;5
-Rainy Hotel;15;0;15
-Red Hotel;10;5;5
-Green Hotel;20;5;15
-Blue Hotel;17;7;10
-Yellow Hotel;8;0;8

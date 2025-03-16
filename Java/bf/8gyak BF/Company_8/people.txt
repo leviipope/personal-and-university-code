@@ -1,4 +1,0 @@
-Person [name=Dani; nickname=null; birthDate=2000-02-24]
-Person [name=Attila; nickname=Atis; birthDate=1988-02-24]
-Employee [id=1; Department[[id=Dev1; name=Fejlesztői_csapat]], toString()=Person [name=Csongor; nickname=null; birthDate=1997-10-29]]
-Employee [id=2; Department[[id=QA; name=Quality_Assurance]], toString()=Person [name=Zoltán; nickname=null; birthDate=1997-10-29]]
