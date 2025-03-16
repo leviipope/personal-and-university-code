@@ -1,0 +1,43 @@
+fajl neve mindig- ZDE_OKT_p[program sorzszáma]_[monogram(PLN)]
+ZDE csomagba
+
+*&---------------------------------------------------------------------*
+*& Report  ZDE_OKT_P2_PLN
+*&
+*&---------------------------------------------------------------------*
+*&
+*&
+*&---------------------------------------------------------------------*
+
+REPORT ZDE_OKT_P2_PLN. " Megjegyzés kód után
+* Megjegyzés
+*multi
+*line
+*comment
+*with crtl + ,
+*uncomment: ctrl + .
+*
+*WRITE 'hello'.
+*
+*DATA a TYPE i VALUE 5.
+*DATA b TYPE i.
+**DATA: a TYPE i, VALIE 5, b TYPE i.
+*
+**b = 10.
+**MOVE 10 TO a.
+*
+*WRITE: 'a =', a, / 'b=', b, /.
+*
+*Data: s type i, p type i.
+*s = a + b.
+*p = a * b.
+*Write: 'szum = ', s, 'szorzat = ', p.
+
+*PARAMETERS date TYPE d DEFAULT '20250225'.
+*PARAMETERS ch1 as CHECKBOX.
+*PARAMETERS ch2 as CHECKBOX DEFAULT 'X'.
+*PARAMETERS ryes RADIOBUTTON GROUP r1.
+*PARAMETERS rno RADIOBUTTON GROUP r1 DEFAULT 'X'.
+
+WRITE: / text-001, / text-000, /.
+WRITE 'alma' QUICKINFO 'Ez egy gyümölcs'.
