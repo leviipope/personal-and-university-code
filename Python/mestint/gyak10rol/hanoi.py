@@ -35,16 +35,21 @@ class Hanoi_problema (Feladat):
 
 
 def heurisztika(csúcs):
-    a = csúcs.állapot
-    n = 
-    return 2 ** n - 1
+    allapot = csúcs.állapot
+    cel = ('R', 'R', 'R')  # The goal state from the example
+    
+    # Count the number of disks not in their goal position
+    return sum(1 for i in range(len(allapot)) if allapot[i] != cel[i])
+
 
 if __name__ == "__main__":
     h = Hanoi_problema(('P','P','P'),('R','R','R'))
-    csúcs = szélességi_fakereső(h)
+    #csúcs = szélességi_fakereső(h)
     #csúcs = mélységi_fakereső(h)
+    csúcs = best_first(h, heurisztika)
     út = csúcs.út()
     út.reverse()
     print(út)
+    print(len(csúcs.út()))
     print(csúcs.megoldás())
 

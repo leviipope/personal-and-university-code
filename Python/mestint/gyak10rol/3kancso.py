@@ -37,7 +37,7 @@ class kancso_problema (Feladat):
         if a2 != 0 and a3 != self.MAX3:
             T = min(a2,self.MAX3-a3)
             uj_allapot = (a1, a2-T, a3+T)
-            gyerekek.append(("2-ből 3-be", uj_allapot))
+            gyerekek.append(("2-bwől 3-be", uj_allapot))
 
         if a3 != 0 and a1 != self.MAX1:
             T = min(a3,self.MAX1-a1)
@@ -67,13 +67,20 @@ class kancso_problema (Feladat):
                     gyerekek.append((f"{i + 1}-ből {j + 1}-be", tuple(uj_allapot)))
         return gyerekek
 
+# https://www.perplexity.ai/search/currently-for-the-3-vase-max-3-9W66NmfiSiKwnMX2HPC6hw
 def heurisztika(csúcs):
     a = csúcs.állapot
+    min_diff = min(abs(a[0]-4), abs(a[1]-4), abs(a[2]-4))
+    avg_diff = (abs(a[0]-4) + abs(a[1]-4) + abs(a[2]-4)) / 3
+    return min_diff + avg_diff
 
-    return min([abs(a[0]-4), abs(a[1]-4), abs(a[2]-4)])
+def heurisztika_regi(csúcs):
+    a = csúcs.állapot
+
+    return min(abs(a[0]-4), abs(a[1]-4), abs(a[2]-4))
 
 if __name__ == "__main__":
-    kancso = kancso_problema((0, 0, 8), 4)
+    kancso = kancso_problema((0, 0, 32), 12)
 
     # current_state = (2, 5, 1)
     # print(current_state)
